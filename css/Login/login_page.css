@@ -1,0 +1,116 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+.container {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    width: 350px;
+    height: 140px;
+    border: 1px solid #DBDBDB;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.introduce{
+    position: absolute;
+    width: 215px;
+    height: 15px;
+    top: 20px;
+    left: 16px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-style: normal;
+    font-size: 12px;
+    font-weight:400;
+    line-height: 15px;
+    color: #000;
+}
+
+.login_btn {
+    position: absolute;
+    width: 318px;
+    height: 40px;
+    left: 16px;
+    top: 50px;
+    background-color: #711bff;
+    border-radius: 4px;
+}
+
+.logo {
+    /* position: absolute; */
+    width: 64px;
+    height: 18px;
+    left: 124px;
+    top: 60px;
+    vertical-align: middle;
+}
+
+.login {
+    width: 34px;
+    height: 15px;
+    left: 192px;
+    top: 63px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.logo_lock {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 16px;
+    top: 106px;
+    /* vertical-align: top; */
+}
+
+.id {
+    position: absolute;
+    width: 34px;
+    height: 15px;
+    left: 36px;
+    top: 107px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #767676;
+}
+
+.pw {
+    position: absolute;
+    width: 80px;
+    height: 15px;
+    left: 82px;
+    top: 107px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #767676;
+}
+
+.logo_person {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 269px;
+    top: 106px;
+}
+
+.aa {
+    position: absolute;
+    width: 45px;
+    height: 15px;
+    left: 289px;
+    top: 107px;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #767676;
+}
