@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+</head>
+<body>
+    <!-- web의 개발자도구 콘솔창으로 실행할것 -->
+    <script>
+        // 입력받은 수 평균값 구하기
+        function avg(a){
+            let sum = 0
+            for(let i =0; i<a.length; i++){
+                sum +=a[i]
+            }
+            return sum / a.length
+        }
+
+        // 입력받는 수 1000단위로 끊어서 표현하기
+        function change(x){
+            let a = x.toString().split('').reverse()
+            let b = []
+            for(let i = 0; i < a.length; i+=4){
+                a.splice(i,0,',')
+            }
+            b = a.shift()
+            return a.reverse().join('')
+        }
+    </script>
+</body>
+</html>
