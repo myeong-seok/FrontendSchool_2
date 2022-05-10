@@ -21,11 +21,9 @@
         // 입력받는 수 1000단위로 끊어서 표현하기
         function change(x){
             let a = x.toString().split('').reverse()
-            let b = []
-            for(let i = 0; i < a.length; i+=4){
-                a.splice(i,0,',')
+            for(let i = 3; i < a.length; i+=4){
+                    a.splice(i,0,',')
             }
-            b = a.shift()
             return a.reverse().join('')
         }
     </script>
