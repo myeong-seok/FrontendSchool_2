@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color_change</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: black;
+        }
+        .box22{
+            display: flex;
+            margin: 50px auto;
+            justify-content: space-around;
+        }
+
+        .box.red{
+            background-color: red;
+        }
+
+        .box.yellow {
+            background-color: yellow;
+        }
+
+        .box.green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box22">
+        <button class="red">red</button>
+        <button class="yellow">yellow</button>
+        <button class="green">green</button>
+    </div>
+</body>
+<script>
+    const box = document.querySelector('.box');
+    const btn1 = document.querySelector(".red");
+    const btn2 = document.querySelector(".yellow");
+    const btn3 = document.querySelector(".green");
+
+    // btn1.addEventListener('click', function(){
+    //     box.classList.remove('yellow', 'green')
+    //     box.classList.add('red');
+    // })
+    //     btn2.addEventListener('click', function(){
+    //     box.classList.remove('red', 'green')
+    //     box.classList.add('yellow');
+    // })
+    // btn3.addEventListener('click', function(){
+    //     box.classList.remove('red', 'yellow')
+    //     box.classList.add('green');
+    // })
+
+    const btnArr = [btn1,btn2,btn3];
+
+    btnArr.forEach((el)=>{
+        el.addEventListener('click',()=>{
+            box.classList.remove('red','green','yellow');
+            if(el.className == 'red'){
+                box.classList.add('red')
+            }else if(el.className == 'yellow'){
+                box.classList.add('yellow')
+            }else{
+                box.classList.add('green')
+            }
+        })
+    })
+</script>
+</html>
